@@ -8,6 +8,7 @@ import Footer from "@/components/Footer";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Link } from "wouter";
 import { motion } from "framer-motion";
+import { appScreenshot, offlineMap } from "@/lib/images";
 import {
   Globe,
   Map,
@@ -165,7 +166,7 @@ export default function Home() {
                 {/* Phone frame */}
                 <div className="relative bg-card rounded-3xl border border-border/50 p-2 shadow-2xl">
                   <img
-                    src="/manus-storage/WhatsAppImage2026-07-20at15.02.07_44029819.jpeg"
+                    src={appScreenshot}
                     alt="GeOp App Interface"
                     className="w-full max-w-[280px] rounded-2xl"
                   />
@@ -268,7 +269,7 @@ export default function Home() {
               <div className="relative">
                 <div className="absolute -inset-6 bg-primary/5 rounded-3xl blur-xl" />
                 <img
-                  src="/manus-storage/geop-offline-map_f27e7455.png"
+                  src={offlineMap}
                   alt="GeOp Offline Map Feature"
                   className="relative rounded-xl border border-border/30 w-full max-w-md"
                 />

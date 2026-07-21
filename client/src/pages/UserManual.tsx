@@ -6,6 +6,7 @@ import Header from "@/components/Header";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Link } from "wouter";
 import { ArrowLeft } from "lucide-react";
+import { appScreenshot } from "@/lib/images";
 
 export default function UserManual() {
   const { t } = useLanguage();
@@ -83,7 +84,7 @@ export default function UserManual() {
           {/* App Screenshot */}
           <div className="mt-16 rounded-lg overflow-hidden border border-border/50">
             <img
-              src="/manus-storage/WhatsAppImage2026-07-20at15.02.07_44029819.jpeg"
+              src={appScreenshot}
               alt="GeOp App Interface"
               className="w-full max-w-sm mx-auto"
             />

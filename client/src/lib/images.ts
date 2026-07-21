@@ -1,14 +1,14 @@
 /**
- * GeOp Images - Otimizadas para GitHub Pages
- * Gerado por fix-images-v2.py
- * 
- * Todas as imagens foram convertidas para WebP/JPEG otimizado
- * e incluídas no diretório assets para funcionar no GitHub Pages.
+ * GeOp Images - GitHub Pages compatible
+ * Imagens no diretório public/ são copiadas literalmente pelo Vite
+ * e acessíveis via caminho absoluto com base path.
  */
 
-export const appScreenshot = new URL("../assets/images/app-screenshot.jpeg", import.meta.url).href;
-export const offlineMap = new URL("../assets/images/offline-map.webp", import.meta.url).href;
-export const heroBg = new URL("../assets/images/hero-bg.webp", import.meta.url).href;
-export const features = new URL("../assets/images/features.webp", import.meta.url).href;
-export const tracks = new URL("../assets/images/tracks.webp", import.meta.url).href;
-export const logoIcon = new URL("../assets/images/logo-icon.webp", import.meta.url).href;
+// Caminhos absolutos para imagens no diretório public/
+// O base path (/geop-site/) é injetado pelo Vite automaticamente
+export const appScreenshot = "/images/app-screenshot.jpeg";
+export const offlineMap = "/images/offline-map.webp";
+export const heroBg = "/images/hero-bg.webp";
+export const features = "/images/features.webp";
+export const tracks = "/images/tracks.webp";
+export const logoIcon = "/images/logo-icon.webp";
